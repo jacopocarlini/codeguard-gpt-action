@@ -2,6 +2,11 @@ on: [pull_request]
 
 name: Test ChatGPT
 
+permissions:
+  pull-requests: write
+  contents: read
+
+
 jobs:
   codeguard:
     runs-on: ubuntu-latest
