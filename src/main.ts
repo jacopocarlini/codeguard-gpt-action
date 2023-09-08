@@ -29,7 +29,6 @@ async function run(): Promise<void> {
       `GET /repos/${owner}/${repo}/pulls/${pullNumber}/files`
     )
 
-
     for (const file of files.data) {
       const extension = file.filename.split('.').pop()
 
